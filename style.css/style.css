@@ -1,0 +1,15 @@
+h1 {
+    color: blueviolet;
+    text-align: center;
+}
+p {
+    color: blueviolet;
+    text-indent: 40px;
+}
+small {
+    display: block;
+    color: rgb(17, 174, 174);
+    text-indent: 40px;
+    font-size: 30px;
+
+}
