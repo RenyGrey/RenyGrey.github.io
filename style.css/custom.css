@@ -1,0 +1,53 @@
+/* universal selector */
+* {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-indent: 40px;
+}
+
+/* tag / element selector */
+    h1{
+        color: brown;
+    }
+
+/* attribute selector */
+    a[type="google"] {
+        color: aquamarine;
+    }
+
+    /* ID Selector */
+    #idone{
+        color: aquamarine;
+    }
+    #idtwo{
+        color: aqua;
+    }
+
+    /* Class Selector */
+
+    .classone{
+        color: blueviolet;
+    }
+    .classtwo{
+        color: blue;
+        text-transform: capitalize;
+        letter-spacing: 5px;
+        line-height: 50px;
+        word-spacing: 10px;
+        
+    }
+
+    /* Descendent selector */
+    .desc a{
+        color: red;
+    }
+
+    /* child selector */
+
+.child > a{
+    color: red;
+}
+
+.child > span > a{
+    color: red;
+}
