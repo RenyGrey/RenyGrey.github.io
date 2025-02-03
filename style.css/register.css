@@ -1,0 +1,23 @@
+#mybody{
+    background-color: rgb(30, 151, 188);
+}
+#header1{
+    color: rgb(15, 15, 78);
+    text-align: center;
+}
+
+#myform{
+    width: 40%;
+    margin: auto;
+}
+
+input[type="text"] {
+    width: 60%;
+    height: 40px;
+}
+
+input[type="email"] {
+    width: 60%;
+    height: 40px;
+}
+

@@ -51,3 +51,26 @@
 .child > span > a{
     color: red;
 }
+
+/* Pseudo Selector */
+a:link{
+     color: blue;
+}
+
+a:hover{
+    color: aqua;
+}
+
+a:active{
+    color: blueviolet;
+}
+
+a:visited{
+    color: rgb(209, 26, 26);
+}
+
+/* target  */
+:target{
+    color: blueviolet;
+}
+
