@@ -52,6 +52,10 @@
     color: red;
 }
 
+.tryme a {
+    color: greenyellow;
+}
+
 /* Pseudo Selector */
 a:link{
      color: blue;
