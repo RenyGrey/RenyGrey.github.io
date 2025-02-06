@@ -1,0 +1,38 @@
+.gridOne div, .gridTwo div, .gridThree div, .gridFour div, .gridFive div, .gridsix div{
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+.gridOne, .gridTwo, .gridThree, .gridFour, .gridFive, .gridsix{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.gridTwo{
+    grid-column-gap: 20px;
+}
+
+.gridThree{
+    grid-row-gap: 20px;
+}
+
+.gridFour{
+    grid-gap: 20px;
+}
+
+.columnadd{
+    grid-column-start:1 ;
+    grid-column-end: 3;
+}
+
+/* .columnadd1{
+    grid-column-start:3;
+    grid-column-end:4;
+} */
+
+.rowadd{
+    /* grid-column-start: 2; */
+    grid-row-start:1;
+    grid-row-end:3 ;
+}

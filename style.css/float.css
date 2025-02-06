@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+}
+.float_left img{
+    width: 40%;
+    float: left;
+}
+
+.clear{
+    clear: left;
+}
+
+.float_right img{
+    width: 40%;
+    float: right;
+}
