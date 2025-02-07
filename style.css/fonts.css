@@ -1,0 +1,18 @@
+.online_fonts{
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 20px;
+}
+
+/* Offline Fonts  */
+
+@font-face{
+    src: url(Pacifico-Regular.ttf);
+    font-family: "shadow";
+}
+.Offline_fonts{
+    font-family: shadow;
+}
+
