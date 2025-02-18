@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Liter ;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/* For Fonts  */
+.liter-regular {
+    font-family: "Liter", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* For nav  */
+.container{
+    background-image: url(../images/homeimg.webp);
+    position: relative;
+    width: 100%;
+    height: 750px;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+}
+
+.main-nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+}
+
+.logo{
+   display: flex;
+   margin-left: 80px;
+}
+
+.logo img{
+    width: 150px;
+    height: 80px;
+}
+
+.nav-menu ul{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    margin-top: 26px;
+}
+
+.nav-menu ul li{
+    list-style-type: none;
+}
+
+.nav-menu ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn{
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    align-items: start;
+    margin-right: 100px;
+    margin-top: 26px;
+}
+.btn a{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-container{
+    margin-top: 220px;
+    margin-left: 80px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+.header a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.header-hr{
+    width: 84px;
+}
+
+/* Info  */
+.info-container{
+    background-color: rgb(0, 8, 36);
+}
+.info-container ul{
+    display: flex;
+    gap: 50px;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.info-container ul li{
+    margin-right: 100px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+
+/* about  */
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.about h1{
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+.about a{
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 250px;
+    height: 40px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Collection  */
+
+.main-collection h1{
+    margin-left: 36px;
+    font-size: 3em;
+}
+
+td[class="collection1"] {
+    position: relative;
+    background-image: url(../images/collection1.webp);
+    width: 300px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* for text  */
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    color:rgb(255, 255, 255);
+    text-align: start;
+    font-weight: bold;
+    padding: 0 0 15px 15px;
+
+}
+
+td[class="collection2"] {
+    position: relative;
+    background-image: url(../images/collection2.webp);
+    width: 300px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* for text  */
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    color:rgb(255, 255, 255);
+    text-align: start;
+    font-weight: bold;
+    padding: 0 0 15px 15px;
+
+}
+
+td[class="collection3"] {
+    position: relative;
+    background-image: url(../images/collection3.webp);
+    width: 300px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* for text  */
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    color:rgb(255, 255, 255);
+    text-align: start;
+    font-weight: bold;
+    padding: 0 0 15px 15px;
+
+}
+
+td[class="collection4"] {
+    position: relative;
+    background-image: url(../images/collection4.webp);
+    width: 300px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* for text  */
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    color:rgb(255, 255, 255);
+    text-align: start;
+    font-weight: bold;
+    padding: 0 0 15px 15px;
+}
+
+td[class="collection5"] {
+    position: relative;
+    background-image: url(../images/collection5.webp);
+    width: 300px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* for text  */
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    color:rgb(255, 255, 255);
+    text-align: start;
+    font-weight: bold;
+    padding: 0 0 15px 15px;
+}
+
+td[class="collection6"] {
+    position: relative;
+    background-image: url(../images/collection6.webp);
+    width: 300px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* for text  */
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    color:rgb(255, 255, 255);
+    text-align: start;
+    font-weight: bold;
+    padding: 0 0 15px 15px;
+}
+
+td[class="collection7"] {
+    position: relative;
+    background-image: url(../images/collection7.webp);
+    width: 300px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* for text  */
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    color:rgb(255, 255, 255);
+    text-align: start;
+    font-weight: bold;
+    padding: 0 0 15px 15px;
+}
+
+td[class="collection8"] {
+    position: relative;
+    background-image: url(../images/collection8.webp);
+    width: 300px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* for text  */
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    color:rgb(255, 255, 255);
+    text-align: start;
+    font-weight: bold;
+    padding: 0 0 15px 15px;
+}
+
+.main-collection{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.collectiongp1, .collectiongp2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 35px;
+}
+
+.collection-hr{
+    width: 1364px;
+    margin-left: 80px;
+
+}
+
+
+/* SHOWROOMS  */
+
+.showrooms-container{
+    position: relative;
+    /* width: 100%; */
+    width: 1439px;
+    height: 600px;
+    background-image: url(../images/showroom.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    margin-top: 40px;
+
+    /* for text  */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    padding-left: 80px;
+    color: rgb(255, 255, 255)
+}
+
+.main-showrooms h1{
+    font-size: 100px;
+    word-spacing: 10px;
+}
+
+.showroomp1{
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.showroomp{
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.btn1{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 20px 30px;
+    border-radius: 80px;
+    margin-right: 35px;
+    color: rgb(0, 0, 0);
+    width: 200px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.showroombtn{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+/* Most Popular  */
+.popular-container{
+    margin-left: 80px;
+}
+
+.popular-container h1{
+    margin-top: 30px;
+    margin-left: 28px;
+    font-size: 3em;
+}
+
+.popular1 img, .popular2 img, .popular3 img, .popular4 img{
+    width: 300px;
+    height: 400px;
+}
+
+.popular1 a, .popular2 a, .popular3 a, .popular4 a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+/* Discover  */
+

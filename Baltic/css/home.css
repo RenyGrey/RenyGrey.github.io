@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Liter ;
+}
+
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/* For Fonts  */
+.liter-regular {
+    font-family: "Liter", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Nav bar  */
+
+.main-nav{
+    background-image: url(../images/homeimg.webp);
+    width: 100%;
+    height: 750px;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+}
+.nav-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.logo-img img{
+    width: 150px;
+    height: 80px;
+    margin-left: 90px;
+}
+
+.nav-main{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+
+}
+
+.nav-main li{
+    list-style: none;
+}
+
+.nav-main li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.ul-container{
+    margin-top: 26px;
+}
+
+.btn-nav{
+    display: flex;
+    justify-content: end;
+    margin-right: 90px;
+    margin-top: 26px;
+}
+
+.btn-nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header{
+    margin-left: 90px;
+    margin-top: 250px;
+}
+
+.header h1{
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+    letter-spacing: 4px;
+}
+
+.header a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.header-hr{
+    width: 76px;
+}
+
+/* Info  */
+.info-container{
+    background-color: rgb(0, 8, 36);
+}
+.info-container ul{
+    display: flex;
+    gap: 50px;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.info-container ul li{
+    margin-right: 100px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+/* About  */
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.about h1{
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+.about a{
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 250px;
+    height: 40px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Collection  */
+
+.collection1{
+    background-image: url(../images/collection1.webp);
+    width: 300px;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.collection2{
+    background-image: url(../images/collection2.webp);
+    width: 300px;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.collection3{
+    background-image: url(../images/collection3.webp);
+    width: 300px;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.collection4{
+    background-image: url(../images/collection4.webp);
+    width: 300px;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.collection5{
+    background-image: url(../images/collection5.webp);
+    width: 300px;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.collection6{
+    background-image: url(../images/collection6.webp);
+    width: 300px;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.collection7{
+    background-image: url(../images/collection7.webp);
+    width: 300px;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.collection8{
+    background-image: url(../images/collection8.webp);
+    width: 300px;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    /* For text  */
+
+.collection-container{
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    row-gap: 30px;
+    margin-left: 90px;
+    margin-top: 30px;
+}
+
+.collection-h1{
+    margin-left: 90px;
+}
+.collection1 a, .collection2 a, .collection3 a, .collection4 a, .collection5 a, .collection6 a, .collection7 a, .collection8 a{  
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+    margin-left: 20px;
+    padding-top: 430px;
+}
+.collection1 a p, .collection2 a p, .collection3 a p, .collection4 a p, .collection5 a p, .collection6 a p, .collection7 a p, .collection8 a p{
+    font-weight: bold;
+}
+
+/* Showrooms  */
+.showrooms-container{
+    margin-top: 200px;
+    background-image: url(../images/showroom-new-york.webp);
+    background-color: rgb(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.showrooms-container p{
+    color: rgb(255, 255, 255);
+}
+.showroomh1s{
+    display: flex;
+    flex-direction: row;
+     
+}
+
+.showroomh1s h1{
+    color: rgb(255, 255, 255);
+    padding-left: 100px;
+    
+}
+
