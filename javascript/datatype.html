@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Type</title>
+</head>
+<body>
+    <h1>Data Type</h1>
+    <script>
+
+        // String Data Type 
+        let name = "Shine Minn";
+        console.log("Name is" + name);
+        console.log("Name data type is" + typeof(name));
+
+        let age = 23;
+        console.log("Age is" + age);
+        console.log("Age data type is" + typeof(age));
+
+        let single = true;
+        console.log("Single is" + single);
+        console.log("Single data type is" + typeof(single));
+
+
+        // undefined 
+        let mybaby;
+        console.log(mybaby);
+
+        // Null 
+        let son = null;
+        console.log(null);
+        console.log(typeof(null));
+
+        // Array 
+        let arr = new Array('a','b','c','d');
+        console.log(arr);
+        console.log(arr[2]);
+
+        let studentlist = ["Aung Aung", "Kyaw Kyaw", "Aye Aye"];
+        console.log(studentlist);
+        console.log(studentlist[2]);
+
+        let employee = ["Aung Aung", "Kyaw Kyaw", "Aye Aye", ["mg mg", "kg kg"], "Hla Hla"];
+        console.log(employee);
+        console.log(employee[3][0]);
+
+        // Object 
+        let carinfo = {
+                        carName : "Honda Fit",
+                        color : "white",
+                        number : "1Q-8654",
+                        model: ["2019", "2020"],
+        }
+
+        console.log(carinfo);
+        console.log(carinfo.color);
+        console.log(carinfo.model[1]);
+
+    </script>
+</body>
+</html>
