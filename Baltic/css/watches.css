@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Liter ;
+}
+
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/* For Fonts  */
+.liter-regular {
+    font-family: "Liter", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Nav bar  */
+
+.main-nav{
+    background-image: url(../watchespage/20231003_Baltic_016.avif);
+    width: 100%;
+    height: 750px;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+}
+.nav-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.logo-img img{
+    width: 150px;
+    height: 80px;
+    margin-left: 90px;
+}
+
+.nav-main{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+
+}
+
+.nav-main li{
+    list-style: none;
+}
+
+.nav-main li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.nav-main li a::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    display: block;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+    background: rgb(255, 255, 255);
+    transition: all 0.2s;
+}
+
+.nav-main li a:hover::after{
+    opacity: 1;
+}
+
+.ul-container{
+    margin-top: 26px;
+}
+
+.btn-nav{
+    display: flex;
+    justify-content: end;
+    margin-right: 90px;
+    margin-top: 26px;
+}
+
+.btn-nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header{
+    margin-left: 90px;
+    margin-top: 250px;
+}
+
+.header h1{
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+    letter-spacing: 4px;
+}
+
+.header a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Hermétique  */
+
+.hermetique-hs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+}
+
+.hermetique-h3{
+    margin-top: 60px;
+    margin-left: 600px;
+    font-size: 15px;
+}
+
+ .hermetique-h1{
+    margin-left: 90px;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+.hermetique-hr {
+    margin-left: 90px;
+    width:  1350px;
+    margin-bottom: 40px;
+}
+
+.hermetique-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 35px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 20px;
+}
+
+.hermetique1{
+    position: relative;
+}
+.hermetique1 img{
+    width: 300px;
+    height: 420px;
+    position: absolute;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.hermetique1 #img2:hover{
+    opacity: 0;
+    cursor: pointer;
+}
+
+.hermetique1-content{
+    padding-top: 426px;
+}
+
+.hermetique1-content a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+
+/* Discover Accessories  */
+
+.accessories-main{
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 120px;
+}
+.accessories-container{
+    background-image: url(../watchespage/watch-straps-radstock-racing-style-genuine-leather-watch-strap-vintage-red-37329789059235_1200x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.accessories-p{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-left: 50px;
+    padding-top: 100px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.accessories-btn{
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+    margin-top: 10px;
+    display: inline-block;
+    border: 1px solid white;
+    text-decoration: none;
+    padding: 20px 30px;
+    border-radius: 80px;
+    margin-right: 35px;
+    color: rgb(255, 255, 255);
+    width: 100px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.accessories-btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+/* Footer  */
+
+.footer-container{
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row; 
+}
+
+.footer1{
+    width: 100%;
+}
+.footer1 img{
+    width: 200px;
+    height: 100px;
+}
+
+.footer-h1{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+#email{
+    width: 350px;
+    height: 40px;
+    padding-left: 10px;
+    
+}
+
+.footer-btn {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;    
+}
+
+.footer-p{
+    color: gray;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.footer2{
+    background-image: url(../images/footerimg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgb(0, 0, 0, 0.3);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-top: 20px;
+    
+}
+
+.footer2 p{
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+
+}
+
+.footerbtn{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.footer2 a{
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.faq{
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contactus{
+    display: inline-block;
+   
+    text-decoration: none;
+    padding: 20px 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 80px;
+    margin-right: 30px;
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+    width: 140px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contactus:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.warranty i, .warranty1 i, .warranty2 i{
+    margin-right: 15px;
+}
+.warranty{
+    margin-top: 20px;
+}
+
+.footer-hr{
+    margin-left: 90px;
+    width:  1350px;
+    margin-bottom: 50px;
+}
+
+
+/* footer main  */
+.footer-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 50px;
+    gap: 180px;
+}
+
+.footerwatches, .footer-aboutus, .footer-services, .footer-social{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerwatches p, .footer-aboutus p, .footer-services p, .footer-social p{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footerwatches a, .footer-aboutus a, .footer-services a, .footer-social a{
+    margin-top: 5px;
+    text-decoration: none;
+    color: grey;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* footerpayment  */
+.footerpay-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+
+}
+
+.review-footer{
+    font-weight: bold;
+    color: rgb(33, 31, 31);
+}
+
+.pay-footer{
+    display: flex;
+    margin-left: 150px;
+}
+
+.pay-footer img{
+    width: 60px;
+    height: 40px;
+    margin-left: 20px;
+    
+}
+
+.privacy-footer a{
+    display: flex;
+    margin-left: 240px;
+    text-decoration: none;
+}
+
+.privacy-footer p{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: grey;
+}
+
+.p1{
+    margin-right: 20px;
+}

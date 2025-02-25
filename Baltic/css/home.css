@@ -58,6 +58,22 @@ body{
     font-weight: bold;
 }
 
+.nav-main li a::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    display: block;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+    background: rgb(255, 255, 255);
+    transition: all 0.2s;
+}
+
+.nav-main li a:hover::after{
+    opacity: 1;
+}
+
 .ul-container{
     margin-top: 26px;
 }
@@ -91,6 +107,23 @@ body{
     color: rgb(255, 255, 255);
     font-weight: bold;
 }
+
+.header a::after{
+    content: '';
+    height: 2px;
+    width: 76px;
+    display: block;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+    background: rgb(255, 255, 255);
+    transition: all 0.2s;
+}
+
+.header a:hover::after{
+    opacity: 1;
+}
+
 
 .header-hr{
     width: 76px;
@@ -143,6 +176,11 @@ body{
     padding-top: 16px;
     color: black;
     font-weight: bold;
+}
+
+.about a:hover{
+    background-color: black;
+    color: white;
 }
 
 /* Collection  */
@@ -291,18 +329,23 @@ body{
 
 .btn1{
     display: inline-block;
-    background-color: rgb(255, 255, 255);
+    border: 1px solid white;
     text-decoration: none;
     padding: 20px 30px;
     border-radius: 80px;
     margin-right: 35px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     width: 200px;
     height: 20px;
     align-items: center;
     justify-content: center;
     text-align: center;
     font-weight: bold;
+}
+
+.btn1:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .btn2{
@@ -506,3 +549,289 @@ body{
 }
 
 
+/* For icon  */
+.star-icon{
+    /* position: relative; */
+    width: 10px;
+    height: 10px;
+    margin-right: 50px;
+}
+/* Article  */
+
+.article-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-left: 90px;
+    margin-right: 90px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.article-content{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    word-spacing: 2px;
+}
+
+.article-btn a{
+    text-decoration: none;
+    color: black;
+}
+
+.article-btn{
+    margin-top: 20px;
+}
+
+.article-btn a::after{
+    content: '';
+    height: 1px;
+    width: 100%;
+    display: block;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+    background: rgb(0, 0, 0);
+    transition: all 0.2s;
+}
+
+.article-btn a:hover::after{
+    opacity: 1;
+}
+
+.article-hr{
+    margin-left: 689px;
+    width: 139px;
+}
+
+/* Follow on intsa  */
+
+.follow-h1{
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 150px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.follow-container{
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.follow-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    
+}
+
+.follow-main a img{
+    width: 430px;
+    height: 500px;
+}
+
+/* Footer  */
+
+.footer-container{
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row; 
+}
+
+.footer1{
+    width: 100%;
+}
+.footer1 img{
+    width: 200px;
+    height: 100px;
+}
+
+.footer-h1{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+#email{
+    width: 350px;
+    height: 40px;
+    padding-left: 10px;
+    
+}
+
+.footer-btn {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;    
+}
+
+.footer-p{
+    color: gray;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.footer2{
+    background-image: url(../images/footerimg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgb(0, 0, 0, 0.3);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-top: 20px;
+    
+}
+
+.footer2 p{
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+
+}
+
+.footerbtn{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.footer2 a{
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.faq{
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contactus{
+    display: inline-block;
+   
+    text-decoration: none;
+    padding: 20px 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 80px;
+    margin-right: 30px;
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+    width: 140px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contactus:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.warranty i, .warranty1 i, .warranty2 i{
+    margin-right: 15px;
+}
+.warranty{
+    margin-top: 20px;
+}
+
+.footer-hr{
+    margin-left: 90px;
+    width:  1350px;
+    margin-bottom: 50px;
+}
+
+
+/* footer main  */
+.footer-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 50px;
+    gap: 180px;
+}
+
+.footerwatches, .footer-aboutus, .footer-services, .footer-social{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerwatches p, .footer-aboutus p, .footer-services p, .footer-social p{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footerwatches a, .footer-aboutus a, .footer-services a, .footer-social a{
+    margin-top: 5px;
+    text-decoration: none;
+    color: grey;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* footerpayment  */
+.footerpay-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+
+}
+
+.review-footer{
+    font-weight: bold;
+    color: rgb(33, 31, 31);
+}
+
+.pay-footer{
+    display: flex;
+    margin-left: 150px;
+}
+
+.pay-footer img{
+    width: 60px;
+    height: 40px;
+    margin-left: 20px;
+    
+}
+
+.privacy-footer a{
+    display: flex;
+    margin-left: 240px;
+    text-decoration: none;
+}
+
+.privacy-footer p{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: grey;
+}
+
+.p1{
+    margin-right: 20px;
+}
