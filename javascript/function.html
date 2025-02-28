@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <h1>Function</h1>
+
+    <script>
+
+        // naming function 
+        function num(){
+                document.write(`This is naming function`);
+        }
+        num();
+
+        // argument function 
+        function no(num1,num2){
+            document.write(`This is ${num1 + num2}`);
+        }
+        no(3,5);
+
+        // defaultfunction
+        function sub(num1=4,num2=4){
+            document.write(`This result is ${num1*num2}`);
+        }
+
+        sub();
+        sub(5,5); // data add 
+
+        // Return function 
+        
+        function resultData (num1,num2) {
+            let result = num1 + num2;
+            return result;
+        }
+        let finalResult = resultData(50,50);
+        console.log(finalResult);
+
+
+    </script>
+</body>
+</html>

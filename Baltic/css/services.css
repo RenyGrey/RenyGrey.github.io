@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Liter ;
+}
+
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/* For Fonts  */
+.liter-regular {
+    font-family: "Liter", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Nav bar  */
+
+.main-nav{
+    background-image: url(../contactus/background.jpg);
+    width: 100%;
+    height: 750px;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+.nav-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.logo-img img{
+    width: 150px;
+    height: 80px;
+    margin-left: 90px;
+}
+
+.nav-main{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+
+}
+
+.nav-main li{
+    list-style: none;
+}
+
+.nav-main li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.nav-main li a::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    display: block;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+    background: rgb(255, 255, 255);
+    transition: all 0.2s;
+}
+
+.nav-main li a:hover::after{
+    opacity: 1;
+}
+
+
+.ul-container{
+    margin-top: 26px;
+}
+
+.btn-nav{
+    display: flex;
+    justify-content: end;
+    margin-right: 90px;
+    margin-top: 26px;
+}
+
+.btn-nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header{
+    margin-top: 250px;
+}
+
+.header h1{
+    color: rgb(255, 255, 255);
+    font-size: 5em;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.header a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.faq-contact{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.faq::after{
+    content: '';
+    height: 2px;
+    width: 70px;
+    display: block;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+    background: rgb(255, 255, 255);
+    transition: all 0.2s;
+}
+
+.faq:hover::after{
+    opacity: 1;
+}
+
+.contant::after{
+    content: '';
+    height: 2px;
+    width: 145px;
+    display: block;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+    background: rgb(255, 255, 255);
+    transition: all 0.2s;
+}
+.contant:hover::after{
+    opacity: 1;
+}
+
+.header-hr{
+    width: 76px;
+}
+
+/* FAQ  */
+.faq-container{
+    margin-left: 90px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.faq-container h1{
+    font-size: 4em;
+}
+
+.faq-container p{
+    font-size: 25px;
+}
+
+/* image and content  */
+
+.content-header h1{
+    margin-left: 90px;
+    margin-right: 90px;  
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.content-header h2{
+    margin-left: 90px;
+    margin-right: 90px;  
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+   
+}
+
+.parent{
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.div2 img, .div3 img{
+    width: 650px;
+    height: 490px;
+    border-radius: 30px;
+}
+.content li{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.content p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 6 / 4; }
+    .div2 { grid-area: 1 / 4 / 3 / 7; }
+    .div3 { grid-area: 3 / 4 / 6 / 7; }
+
+.form-main{
+    margin-left: 90px;
+    margin-right: 90px;
+}

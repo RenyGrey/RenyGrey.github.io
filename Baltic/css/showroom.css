@@ -1,0 +1,488 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Liter ;
+}
+
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/* For Fonts  */
+.liter-regular {
+    font-family: "Liter", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Nav bar  */
+
+.main-nav{
+    background-image: url(../showrooms/SwissWatchExpo-Showroom-Buckhead-Atlanta.jpg);
+    width: 100%;
+    height: 750px;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+.nav-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.logo-img img{
+    width: 150px;
+    height: 80px;
+    margin-left: 90px;
+}
+
+.nav-main{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+
+}
+
+.nav-main li{
+    list-style: none;
+}
+
+.nav-main li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.nav-main li a::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    display: block;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+    background: rgb(255, 255, 255);
+    transition: all 0.2s;
+}
+
+.nav-main li a:hover::after{
+    opacity: 1;
+}
+
+
+.ul-container{
+    margin-top: 26px;
+}
+
+.btn-nav{
+    display: flex;
+    justify-content: end;
+    margin-right: 90px;
+    margin-top: 26px;
+}
+
+.btn-nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header{
+    margin-top: 250px;
+}
+
+.header h1{
+    color: rgb(255, 255, 255);
+    font-size: 5em;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.header p{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.header-hr{
+    width: 76px;
+}
+
+/* showroom-content-container */
+
+.showroom-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-right: 90px;
+    column-gap: 30px;
+
+}
+
+.showroom-container img{
+    width: 100%;
+    height: 600px;
+}
+
+.showroom-main{
+    margin-top: 100px;
+}
+
+.showroom-container p{
+    display: flex;
+    justify-content: start;
+    font-size: 20px;
+}
+
+.showroom-container h1{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.showroom-btn{
+    margin-top: 30px;
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 20px 30px;
+    border-radius: 80px;
+    margin-right: 35px;
+    color: rgb(0, 0, 0);
+    width: 200px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.showroom-btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+/* Three Showrooms  */
+.three-showroom-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 50px;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.newyork-showroom img, .paris-showroom img, .london-showroom img{
+    width: 420px;
+    height: 500px;
+
+}
+
+.map{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.map::after{
+    content: '';
+    height: 1.5px;
+    width: 80px;
+    display: block;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+    background: rgb(0, 0, 0);
+    transition: all 0.2s;
+}
+
+.map:hover::after{
+    opacity: 1;
+}
+
+.newyork-showroom p, .paris-showroom p, .london-showroom p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.newyork-showroom , .paris-showroom , .london-showroom {
+        display: flex;
+        flex-direction: column;
+}
+
+.newyork-showroom h2, .paris-showroom h2 , .london-showroom h2 {
+    margin-top: 10px;
+}
+
+.book-btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 15px 10px;
+    border-radius: 80px;
+    margin-right: 35px;
+    color: rgb(0, 0, 0);
+    width: 250px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.book-btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.newyork-showroom h4 , .paris-showroom h4 , .london-showroom h4{
+    font-weight: unset;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.allshowrooms{
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.allshowrooms h1{
+    font-size: 4em;
+    text-align: center;
+    word-spacing: 10px;
+}
+
+/* Two Images  */
+.image-container{
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.img1{
+    width: 650px;
+    height: 700px;
+}
+
+/* Footer  */
+
+.footer-container{
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row; 
+}
+
+.footer1{
+    width: 100%;
+}
+.footer1 img{
+    width: 200px;
+    height: 100px;
+}
+
+.footer-h1{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+#email{
+    width: 350px;
+    height: 40px;
+    padding-left: 10px;
+    
+}
+
+.footer-btn {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;    
+}
+
+.footer-p{
+    color: gray;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.footer2{
+    background-image: url(../images/footerimg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgb(0, 0, 0, 0.3);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-top: 20px;
+    
+}
+
+.footer2 p{
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+
+}
+
+.footerbtn{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.footer2 a{
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.faq{
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contactus{
+    display: inline-block;
+   
+    text-decoration: none;
+    padding: 20px 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 80px;
+    margin-right: 30px;
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+    width: 140px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contactus:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.warranty i, .warranty1 i, .warranty2 i{
+    margin-right: 15px;
+}
+.warranty{
+    margin-top: 20px;
+}
+
+.footer-hr{
+    margin-left: 90px;
+    width:  1350px;
+    margin-bottom: 50px;
+}
+
+
+/* footer main  */
+.footer-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 50px;
+    gap: 180px;
+}
+
+.footerwatches, .footer-aboutus, .footer-services, .footer-social{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerwatches p, .footer-aboutus p, .footer-services p, .footer-social p{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footerwatches a, .footer-aboutus a, .footer-services a, .footer-social a{
+    margin-top: 5px;
+    text-decoration: none;
+    color: grey;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* footerpayment  */
+.footerpay-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+
+}
+
+.review-footer{
+    font-weight: bold;
+    color: rgb(33, 31, 31);
+}
+
+.pay-footer{
+    display: flex;
+    margin-left: 150px;
+}
+
+.pay-footer img{
+    width: 60px;
+    height: 40px;
+    margin-left: 20px;
+    
+}
+
+.privacy-footer a{
+    display: flex;
+    margin-left: 240px;
+    text-decoration: none;
+}
+
+.privacy-footer p{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: grey;
+}
+
+.p1{
+    margin-right: 20px;
+}
