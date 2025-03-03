@@ -242,7 +242,7 @@ body{
     background-size: cover;
 }
 .collection8{
-    background-image: url(../images/collection8.webp);
+    background-image: url(../watchespage/aquascaphe-gmt-grey1.webp);
     width: 300px;
     height: 500px;
     background-position: center;
@@ -282,6 +282,20 @@ body{
     margin-left: 90px;
     width:  1350px;
 }
+
+.collection-hr1{
+    margin-left: 90px;
+    width:  1350px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.collection-hr2{
+    margin-left: 90px;
+    width:  1350px;
+    margin-top: 30px;
+}
+
 
 /* Showrooms  */
 .showrooms-container{
@@ -378,6 +392,7 @@ body{
 .mostpopular-h1{
     margin-left: 90px;
     margin-top: 40px;
+    margin-bottom: 30px;
 }
 .popular1 img, .popular2 img{
     width: 300px;
@@ -834,4 +849,77 @@ body{
 
 .p1{
     margin-right: 20px;
+}
+
+/* Hermétique  */
+
+.hermetique-hs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+}
+
+.hermetique-h3{
+    margin-top: 60px;
+    margin-left: 600px;
+    font-size: 15px;
+}
+
+ .hermetique-h1{
+    margin-left: 90px;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+.hermetique-hr {
+    margin-left: 90px;
+    width:  1350px;
+    margin-bottom: 40px;
+}
+
+.hermetique-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 35px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 20px;
+}
+
+.hermetique1{
+    position: relative;
+}
+.hermetique1 img{
+    width: 300px;
+    height: 420px;
+    position: absolute;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.hermetique1 #img2:hover{
+    opacity: 0;
+    cursor: pointer;
+}
+
+.hermetique1-content{
+    padding-top: 426px;
+}
+
+.hermetique1-content a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+
+video{
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 50px;
+    width: 1348px;
+    height: auto;
+    border-radius: 25px;
 }

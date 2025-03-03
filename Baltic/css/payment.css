@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Liter ;
+}
+
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/* For Fonts  */
+.liter-regular {
+    font-family: "Liter", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* main  */
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main img{
+    width: 150px;
+    height: 80px;
+}
+
+.express{
+    color: grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+span{
+    color: grey;
+}
+
+.shoppay, .paypal{
+    width: 300px;
+    height: 80px;
+    border-radius: 20px;
+    
+}
+
+.twoimg{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-left: 450px;
+    align-items: start;
+}
+.form-group1,.form-group2{
+    margin-left: 450px;
+    align-items: start;
+    margin-top: 10px;
+}
+
+.form-group label, .form-group2 label{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+.form-group input{
+    width: 634px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 0px 10px 20px;
+    margin-bottom: 10px;
+}
+
+select{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 658px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 0px 10px 20px;
+}
+
+span1{
+    color: grey;
+    font-size: 15px;
+}
+
+.btn{
+    border: 1px solid black;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.button  a{
+    text-decoration: none;
+    color: black;
+    margin-left: 700px;
+}
+
+.button{
+    margin-bottom: 30px;
+}
+
+.footerp{
+    margin-left: 640px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+

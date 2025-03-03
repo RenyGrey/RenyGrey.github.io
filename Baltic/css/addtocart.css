@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Liter ;
+}
+
+
+body{
+    background-color:RGB(242, 243, 244);
+}
+
+/* For Fonts  */
+.liter-regular {
+    font-family: "Liter", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.h1{
+    text-align: center;
+    margin: 20px;
+}
+.h2{
+    margin-left: 90px;
+    margin-bottom: 10px;
+}
+
+.accessory-container{
+    margin-left: 90px;
+}
+.accessory-main{
+   width: 600px;
+}
+
+.accessory-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.accessory1, .accessory2, .accessory3, .accessory4 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.accessory1,.accessory2, .accessory3{
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.accessory4{
+   border: 1px solid black;
+}
+
+.accessory1 img, .accessory2 img, .accessory3 img, .accessory4 img{
+    width: 100px;
+    height: 150px;
+}
+
+.accessory1 p, .accessory2 p, .accessory3 p, .accessory4 p {
+    margin-left: 40px;
+}
+
+#icon1, #icon2, #icon3, #icon4 {
+    position: relative;
+    background-color: #000000;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon2{
+    margin-left: 180px;
+}
+#icon3{
+    margin-left: 190px;
+}
+
+#icon1{
+    margin-left: 174px;
+}
+
+#icon4{
+    margin-left: 175px;
+}
+
+.seemore a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.seemore{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* second  */
+.accessory-mainr{
+    display: flex;
+}
+
+.img-contact img{
+    width: 200px;
+    height: 300px;
+    padding-bottom: 90px;
+}
+
+.img-contact{
+    margin-left: 40px;
+}
+
+.add-minusbtn{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    width: 150px;
+    height: 44px;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.add-minusbtn i{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.info-contact p{
+    margin-bottom: 10px;
+}
+
+.p1{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.info-contact{
+    margin-top: 30px;
+}
+
+.checkoutbtn{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: RGB(242, 243, 244);
+    border: 1px solid black;
+    width: 400px;
+    height: 48px;
+    border-radius: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkout{
+    margin-top: 100px;
+    margin-left: 500px;
+    margin-bottom: 20px;    
+}
+
+.footercontact{
+    margin-left: 800px;
+}

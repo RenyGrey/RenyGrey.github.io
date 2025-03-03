@@ -216,6 +216,7 @@ body{
     margin-bottom: 10px;
 }
 
+/* Form  */
 .parent {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -232,3 +233,277 @@ body{
     margin-left: 90px;
     margin-right: 90px;
 }
+
+input{
+    width: 500px;
+    height: 50px;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+textarea{
+    width: 500px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-top: 5px;
+}
+
+.name, .email, .phone, .subject, .message{
+    margin-top: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.color-p{
+    color: gray;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+b{
+    color: black;
+}
+
+.form-container{
+    display: flex;
+}
+
+.form-main{
+    padding-right: 60px;
+}
+
+.form-btn{
+    margin-left: 295px;
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 15px 15px;
+    border-radius: 80px;
+    color: rgb(0, 0, 0);
+    width: 200px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.form-btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.contant-directly{
+    margin-left: 80px;
+    height: 250px;
+    padding: 30px;
+    background-color:black;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+   
+}
+
+/* Footer  */
+
+.footer-container{
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row; 
+}
+
+.footer1{
+    width: 100%;
+}
+.footer1 img{
+    width: 200px;
+    height: 100px;
+}
+
+.footer-h1{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+#emails{
+    width: 350px;
+    height: 40px;
+    padding-left: 10px;
+    
+}
+
+.footer-btn {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;    
+}
+
+.footer-p{
+    color: gray;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.footer2{
+    background-image: url(../images/footerimg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgb(0, 0, 0, 0.3);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-top: 20px;
+    
+}
+
+.footer2 p{
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+
+}
+
+.footerbtn{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.footer2 a{
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.faq1{
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contactus{
+    display: inline-block;
+   
+    text-decoration: none;
+    padding: 20px 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 80px;
+    margin-right: 30px;
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+    width: 140px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contactus:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.warranty i, .warranty1 i, .warranty2 i{
+    margin-right: 15px;
+}
+.warranty{
+    margin-top: 20px;
+}
+
+.footer-hr{
+    margin-left: 90px;
+    width:  1350px;
+    margin-bottom: 50px;
+}
+
+
+/* footer main  */
+.footer-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 50px;
+    gap: 180px;
+}
+
+.footerwatches, .footer-aboutus, .footer-services, .footer-social{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerwatches p, .footer-aboutus p, .footer-services p, .footer-social p{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footerwatches a, .footer-aboutus a, .footer-services a, .footer-social a{
+    margin-top: 5px;
+    text-decoration: none;
+    color: grey;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* footerpayment  */
+.footerpay-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+
+}
+
+.review-footer{
+    font-weight: bold;
+    color: rgb(33, 31, 31);
+}
+
+.pay-footer{
+    display: flex;
+    margin-left: 150px;
+}
+
+.pay-footer img{
+    width: 60px;
+    height: 40px;
+    margin-left: 20px;
+    
+}
+
+.privacy-footer a{
+    display: flex;
+    margin-left: 240px;
+    text-decoration: none;
+}
+
+.privacy-footer p{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: grey;
+}
+
+.p1{
+    margin-right: 20px;
+}
+
