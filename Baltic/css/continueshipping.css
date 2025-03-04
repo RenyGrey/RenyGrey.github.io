@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Liter ;
+}
+
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/* For Fonts  */
+.liter-regular {
+    font-family: "Liter", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* main  */
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main img{
+    width: 150px;
+    height: 80px;
+}
+
+.express{
+    color: grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+span{
+    color: grey;
+}
+
+.shoppay, .paypal{
+    width: 300px;
+    height: 80px;
+    border-radius: 12px;
+    
+}
+
+.twoimg{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact{
+    display: flex;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-right: 410px;
+    padding: 20px 10px;
+    width: 760px;
+}
+
+.shipto{
+    display: flex;
+    border: 1px solid black;
+    margin-right: 410px;
+    padding: 20px 10px;
+    width: 760px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius:10px;
+}
+
+.contact a{
+    margin-left: 370px;
+    /* text-decoration: none; */
+    color: grey;
+}
+.contact a:hover{
+    color: black;
+    font-weight: bold;
+}
+.p2{
+    margin-left: 95px;
+}
+
+.shipto p{
+    margin-right: 100px;
+}
+.shipto a{
+    /* text-decoration: none; */
+    color: grey;
+    margin-left: 36px;
+}
+
+.contactshipto{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 375px;
+}
+
+.shipto a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+.shippingmethod{
+    margin-left: 375px;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 30px;
+}
+
+select{
+    font-size: 20px;
+    width: 300px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+option{
+    font-size: 20px;
+}
+
+.label1 {
+    margin-top: 10px;
+}
+.label1 label{
+    margin-left: 375px;
+    margin-top: 30px;
+}
+
+textarea{
+    width: 762px;
+    height: 300px;
+    margin-left: 375px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+
+.return a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.returnandpay{
+    display: flex;
+    margin-left: 375px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.conpayment{
+    color: black;
+    margin-left: 340px;
+}
+
+.conpayment a{
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 1px solid black;
+    color: black;
+    border-radius: 20px;
+}
+
+.conpayment a:hover{
+    background-color: black;
+    color: white;
+}

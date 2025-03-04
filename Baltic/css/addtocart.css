@@ -72,6 +72,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: grab;
 }
 
 #icon2{
@@ -101,14 +102,30 @@ body{
     margin-bottom: 20px;
 }
 
+.seeall::after{
+    content: '';
+    height: 1px;
+    width: 170px;
+    display: block;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+    background: rgb(0, 0, 0);
+    transition: all 0.2s;
+    margin-left: 215px;
+}
+.seeall:hover::after{
+    opacity: 1;
+}
+
 /* second  */
 .accessory-mainr{
     display: flex;
 }
 
 .img-contact img{
-    width: 200px;
-    height: 300px;
+    width: 160px;
+    height: 210px;
     padding-bottom: 90px;
 }
 
@@ -134,6 +151,7 @@ body{
 .add-minusbtn i{
     margin-left: 20px;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .info-contact p{
@@ -146,7 +164,7 @@ body{
 }
 
 .info-contact{
-    margin-top: 30px;
+    margin-top: 22px;
 }
 
 .checkoutbtn{
@@ -163,11 +181,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.checkoutbtn:hover{
+    background-color: black;
+    color: white;
 }
 .checkout{
-    margin-top: 100px;
+    margin-top: 60px;
     margin-left: 500px;
-    margin-bottom: 20px;    
+    margin-bottom: 30px;    
 }
 
 .footercontact{
