@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="digitalclock.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="together">
+    <div class="clock">
+    <p id="time"></p>
+    <p>:</p>
+    <p id="minute"></p>
+    <p>:</p>
+    <p id="second"></p>
+    <p id="ampm"></p> 
+    </div>
+
+    <div class="date">
+    <p id="day"></p>
+    <p>,</p>
+    <p id="month"></p>
+    <p id="days"></p>
+    <p id="year"></p>
+    </div>
+
+    </div>
+
+    <script>
+
+        //Hours
+        setInterval(timeInterval,1000)
+
+        function timeInterval () {
+            let time = document.getElementById('time');
+            let date = new Date();
+            let hours = date.getHours();
+            time.innerHTML = hours;
+
+        if (hours < 13) {
+            document.getElementById('ampm').textContent = 'AM';
+        } else {
+            document.getElementById('ampm').textContent = 'PM';
+        }
+
+        if(hours < 10) {
+                time.innerHTML = "0" + hours;
+        }else {
+                time.innerHTML = hours;
+        }
+        }
+
+        //Minutes
+        setInterval(timeInterval1,1000)
+
+        function timeInterval1 () {
+            let time = document.getElementById('minute');
+            let date = new Date();
+            let minutes = date.getMinutes();
+            time.innerHTML = minutes;
+
+            if(minutes < 10) {
+                time.innerHTML = "0" + minutes;
+            }else {
+                time.innerHTML = minutes;
+            }
+        }
+
+        //Seconds
+        setInterval(timeInterval2,1000)
+
+        function timeInterval2 () {
+            let time = document.getElementById('second');
+            let date = new Date();
+            let seconds = date.getSeconds();
+            time.innerHTML = seconds;
+
+            if(seconds < 10) {
+                time.innerHTML = "0" + seconds;
+            }else {
+                time.innerHTML = seconds;
+            }
+        }
+
+        //Month
+        setInterval(month,1000)
+        function month () {
+            let time = document.getElementById('month');
+            let todayDate = new Date();
+            let months= ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            let monthName = months[todayDate.getMonth()];
+            time.innerHTML = monthName;
+        }
+
+        //Day
+        setInterval(day,1000)
+        function day () {
+            let time = document.getElementById('day');
+            let todayDate = new Date();
+            let days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+            let dayName = days[todayDate.getDay()];
+            time.innerHTML = dayName;
+        }
+
+        setInterval(days,1000)
+        function days (){
+            let time = document.getElementById('days');
+            let todayDate = new Date();
+            let days = todayDate.getDate();
+            time.innerHTML = days;
+        }
+        //Year
+        setInterval(year,1000)
+        function year () {
+            let time = document.getElementById('year');
+            let todayDate = new Date();
+            let year = todayDate.getFullYear();
+            time.innerHTML = year;
+        }
+
+       
+        
+        
+       
+    </script>
+</body>
+</html>
