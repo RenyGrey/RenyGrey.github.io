@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+        }
+
+        h1{
+            margin-left: 50px;
+            margin-top: 20px;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        label{
+            margin: 20px 0;
+            margin-left: 50px;
+        }
+        input, button{
+            margin-top: 10px;
+            margin-left: 50px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <label for="list">ADD LISTS</label> <br>
+    <input type="text" name="list" id="list"><br>
+    <button id="click">Submit</button>
+
+    <h2>Lists</h2>
+    <ul>
+        <li id="li1"></li>
+        <li id="li2"></li>
+        <li id="li1"></li>
+        <li id="li1"></li>
+        <li id="li1"></li>
+        <li id="li1"></li>
+        <li id="li1"></li>
+    </ul>
+
+<script src="../jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+       
+        $("#click").click(function(){
+            let show = $("#list").val();
+            console.log(show);
+            $("#li1").text(show);
+            $("#li2").text(show);
+        });
+    });
+</script>
+</body>
+</html>

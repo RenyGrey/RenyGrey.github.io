@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        ul{
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+
+        ul li{
+            line-height: 30px;
+            font-size: 18px;
+        }
+
+        .btn{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        #show{
+            margin-right: 20px;
+        }
+
+        #toggle{
+            margin-left: 20px;
+        }
+
+        .home{
+            background-color: grey;
+            color:white;
+        }
+
+        #effect{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>FAQ QUESTIONS</h1>
+    <ul>
+        <li>Reflect and respond to your audience’s needs wholly and thoroughly.</li>
+        <li>Cover a broad range of intent (transactional, informational, locational, etc.).</li>
+        <li>Stay updated based on new insights from your data, the industry, and broader best practices.</li>
+        <li>Land new users to the website by solving problems and supporting return visits with regular additions and valuable expertise sharing.</li>
+        <li>Drive internal pageviews to other important pages and support key conversion paths.</li>
+        <li>Fuel blog (and deeper content) creation logically and intuitively ties together semantically relevant content.</li>
+        <li>Shine a light on expertise, trust, and authority within your niche, giving your brand and key staff a platform to educate, inform, and support your community.</li>
+    </ul>
+
+    <div class="btn">
+        <button id="show">Show</button>
+        <button id="hide">Hide</button>
+        <button id="toggle">Toggle</button>
+        <button id="effect">Add Effect</button>
+        <button id="remove">Remove Effect</button>
+    </div>
+  
+
+
+<script src="jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $("h1").hide();
+            $("ul").hide();
+        });
+
+        $("#show").click(function(){
+            $("h1").show();
+            $("ul").show();
+        });
+
+        $("#toggle").click(function(){
+            $("h1").slideToggle();
+            $("ul").slideToggle();
+        })
+
+       $("#effect").click(function(){
+        $("ul").addClass("home");
+       });
+
+       $("#remove").click(function(){
+        $("ul").removeClass("home");
+       });
+    });
+</script>
+</body>
+</html>

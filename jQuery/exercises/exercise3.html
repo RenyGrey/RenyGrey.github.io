@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise3</title>
+    <style>
+        .home{
+            background-color: black;
+            color: white;
+        }
+
+        .home1{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form</h1>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name"> <br> <br>
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email"> <br> <br>
+
+    <label for="phone">Phone</label>
+    <input type="number" name="phone" id="phone"> <br> <br>
+
+    <button id="click">Click</button>
+
+    <p id="namedata"></p>
+    <p id="emaildata"></p>
+    <p id="phonedata"></p>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis error hic numquam ipsum iste earum nesciunt, asperiores eveniet maiores pariatur est molestiae corrupti, mollitia impedit dolores. Labore eos excepturi quisquam repellendus velit facilis cupiditate aspernatur sequi? Nihil nisi nostrum voluptatum veritatis incidunt ullam praesentium esse, soluta eius adipisci in? Maxime quas reiciendis voluptatem dicta ipsum fugiat atque nobis consequuntur facere in nam, natus ipsa tempora optio, aliquid aut inventore error incidunt animi officiis quisquam quod. Enim, officiis. Incidunt iste hic eos aut nemo, possimus sapiente! Itaque quis expedita eaque in neque mollitia eum ab, velit, reprehenderit praesentium dolores excepturi nemo?</p>
+    </div>
+
+    <button id="black">Black</button>
+    <button id="white">White</button>
+<script src="../jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+        $("#click").click(function(){
+            let name = $("#name").val();
+            let email = $("#email").val();
+            let phone = $("#phone").val();
+            
+            // console.log(name);
+
+            $("#namedata").text(name);
+            $("#emaildata").text(email);
+            $("#phonedata").text(phone);
+
+        });
+
+        $("#black").click(function(){
+            $("p").addClass("home");
+        });
+
+        $("#white").click(function(){
+            $("p").removeClass("home");
+        });
+    });
+</script>
+</body>
+</html>
