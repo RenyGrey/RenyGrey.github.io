@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .yay{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            background-color: gray;
+            color: white;
+            position: relative;
+            display: flex;
+            margin-bottom: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+
+        .main-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Animation HW</h1>
+    <div class="main-div">
+    <!-- <p class="yay">YAY</p> -->
+    <img src="cat.jpg" alt="" class="yay">
+    <button id="click">Click</button>
+    </div>
+
+<script src="jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#click").click(function(){
+            // $(".yay").animate({right:'200px'},3000);
+            // $(".yay").animate({top:'200px'},3000);
+            // $(".yay").animate({left:'200px'},3000);
+            // $(".yay").animate({top:'0px'},3000);
+            // $(".yay").animate({left:'0px'},3000);
+            
+            $(".yay").animate({left:'200px'},3000);
+            $(".yay").animate({top:'200px'},3000);
+            $(".yay").animate({left:"0px"},3000);
+            $(".yay").animate({top:"0px"},3000);
+            
+        });
+    });
+</script>
+</body>
+</html>
