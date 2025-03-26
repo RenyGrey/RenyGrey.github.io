@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+</head>
+<body>
+    
+    <div id="add-student">
+        <h2>Add Student</h2>
+        Name: <input type="text" name="" id="name"> <br> <br>
+        Email: <input type="email" name="" id="email"> <br> <br>
+        Phone: <input type="number" name="" id="phone"> <br> <br>
+        Year: <select name="" id="year">
+            <option value="">Choose Year</option>
+            <option value="First">First Year</option>
+            <option value="Second">Second Year</option>
+            <option value="Third">Third Year</option>
+        </select> <br> <br>
+
+        <button id="add">Add Student</button>
+    </div>
+
+    <h1>Student List</h1>
+    <table border="1" cellspacing="0" cellpadding="25">
+        <thead>
+            <tr>
+                <td>No.</td>
+                <td>Name</td>
+                <td>Email</td>
+                <td>Phone</td>
+                <td>Year</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            
+        </tbody>
+    </table>
+
+
+<script src="jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        let data = '';
+        let i = 1;
+        $('#add').click(function(){
+            let name = $('#name').val();                  //data twy call
+            let email = $('#email').val();
+            let phone = $('#phone').val();
+            let year = $('#year').val();
+
+            if( name && email && phone && year) {
+                console.log(name,email,phone,year);
+
+                data += `<tr>                                
+                            <td>${i++}</td>
+                            <td>${name}</td>
+                            <td>${email}</td>
+                            <td>${phone}</td>
+                            <td>${year}</td>
+                        </tr>`;                                //tbody htl htae pho 
+
+                console.log(data);
+
+                $('tbody').html(data);                          //tbody htl htae pb
+
+                $('#name').val('');                               // 
+                $('#email').val('');
+                $('#phone').val('');
+                $('#year').val('');
+
+            } else {
+                alert("Fill All Data")
+            };
+          
+        });
+    });
+</script>
+</body>
+</html>
