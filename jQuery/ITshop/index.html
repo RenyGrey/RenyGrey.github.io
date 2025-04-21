@@ -16,11 +16,11 @@
             <a href="" class="logo">IT Shop</a>
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                 </ul>
             </nav>
-            <a href=""><button><i class="fa-solid fa-cart-shopping" id="cart" style="color: #ffffff;"></i></button></a>
-            <button1 class="btn2">0</button1>
+            <a href="checkout.html"><button><i class="fa-solid fa-cart-shopping" id="cart" style="color: #ffffff;"></i></button></a>
+            <button1 class="btn2" id="item-count">0</button1>
         </div>
     </header>
 
@@ -30,21 +30,21 @@
                 <img src="images/laptop1.png" alt="" class="img1">
                 <p class="p1">Laptop 1</p>
                 <p>Price : 230000 MMK</p>
-                <button class="btn1">Add to Cart</button>
+                <button class="btn1 addToCart" data-id="1" data-name="Laptop 1" data-price="230000">Add to Cart</button>
             </div>
 
             <div class="div1">
                 <img src="images/laptop2.png" alt="" class="img1">
                 <p class="p1">Laptop 2</p>
                 <p>Price : 240000 MMK</p>
-                <button class="btn1">Add to Cart</button>
+                <button class="btn1 addToCart" data-id="2" data-name="Laptop 2" data-price="240000">Add to Cart</button>
             </div>
 
             <div class="div1">
                 <img src="images/laptop3.png" alt="" class="img1">
                 <p class="p1">Laptop 3</p>
                 <p>Price : 250000 MMK</p>
-                <button class="btn1">Add to Cart</button>
+                <button class="btn1 addToCart" data-id="3" data-name="Laptop 3" data-price="250000">Add to Cart</button>
             </div>
 
             <div class="div1">
@@ -83,5 +83,8 @@
             </div>
         </div>
     </main>
+
+<script src="jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -107,3 +107,18 @@ main{
     font-weight: bold;
     letter-spacing: 0.5px;
 }
+
+/* Checkout */
+
+tr td {
+    text-align: center;
+    padding: 20px;
+}
+
+button1{
+    display: inline-block;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
