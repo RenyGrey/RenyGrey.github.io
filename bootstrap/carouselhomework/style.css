@@ -1,0 +1,7 @@
+.carousel .carousel-item {
+    transition-duration: 2s;
+}
+
+body{
+    background-color: black;
+}
