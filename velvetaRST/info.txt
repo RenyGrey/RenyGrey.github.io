@@ -4,8 +4,131 @@ https://minimalistbaker.com/
 
 https://fidalgo.qodeinteractive.com/
 
+https://fidalgo.qodeinteractive.com/
+
 https://html.awaikenthemes.com/spicyhunt/index.html
 
 https://preview.themeforest.net/item/patiotime-restaurant-wordpress-theme/full_screen_preview/37171096?_ga=2.130666895.1091815479.1746608885-166786873.1746077542
 
 https://rolanda.qodeinteractive.com/restaurant-home/
+
+
+ <!-- <div class="">
+            <div class="welcome_line justify-content-center">
+                <div class="line"></div>
+                <div class="aboutus_text"><h2>About Us</h2></div>
+                <div class="line"></div>
+            </div>
+    </div> -->
+            <!-- <div class="container position-relative">
+                <div class="row">
+                left Section
+                <div class="left_section col-sm-12 col-md-12 col-lg-6">
+                    <img src="images/about1.jpg" alt="" class="main_img">
+                    <div class="experience">
+                        <p>30+ Years Experience</p>
+                    </div>
+                    <img src="images/aboutchef.jpg" alt="" class="chef_img">
+                </div> -->
+
+                <!-- Right Section  -->
+                <!-- <div class="right_section col-sm-12 col-md-12 col-lg-6">
+                    <h2>Our Commitment to Authenticity & <span class="r_h2">excellence</span></h2>
+                    <p>Every dish we create is a celebration of connection, crafted with passion and inspired by diverse flavors. Join us in an inviting space where every bite sparks joy and every moment becomes a cherished memory.</p>
+
+                    <ul class="about_ul">
+                        <li class="about_curry">
+                            <i class="fa-solid fa-check" style="color: #A87C4F;"></i>
+                            <span class="">seasonal & locally sourced ingredients</span>
+                        </li>
+                        <li class="about_curry">
+                            <i class="fa-solid fa-check" style="color: #A87C4F;"></i>
+                            <span class="">vegetarian & dietary-friendly options</span>
+                        </li>
+                        <li class="about_curry">
+                            <i class="fa-solid fa-check" style="color: #A87C4F;"></i>
+                            <span class="">exquisite pairings & unique flavors</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+       </div> -->
+
+
+
+/* .aboutus_text{
+    font-family: "Work Sans";
+    color: #ccc;
+    text-transform: uppercase;
+    
+}
+
+.main_img{
+    width: 400px;
+    height: 600px;
+    border-radius: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.experience{
+    background-color: #A87C4F;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    width: 160px;
+    position: absolute;
+    top: 20%;
+    left: 320px;
+    z-index: 1;
+    text-align: center;
+    font-family: "Roboto";
+    letter-spacing: 1px;
+}
+
+.chef_img{
+    width: 140px;
+    height: 140px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    z-index: 2;
+}
+
+.right_section{
+    margin-top: 100px;
+}
+.right_section h2{
+    color: #ffffff;
+    font-family: "Lora";
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.r_h2{
+    color: #A87C4F;
+}
+.right_section p{
+    color: #ccc;
+    font-size: 16px;
+    font-family: "Roboto";
+    letter-spacing: 1px;
+}
+
+.about_curry{
+    color: #ccc;
+    list-style-type: none;
+    font-size: 16px;
+    font-family: "Roboto";
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.about_ul{
+    padding: 0;
+} */

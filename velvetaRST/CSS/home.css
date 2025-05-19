@@ -47,6 +47,8 @@ body{
     background-color:#0E2C2B; 
 }
 
+/* For nav start  */
+
 .book-btn{
     color: #ffffff !important;
     border-color:#A87C4F;
@@ -88,7 +90,9 @@ body{
     border-color:#A87C4F;
 }
 
-/* Hamburger nav  */
+/* For nav end  */
+
+/* Hamburger nav start */
 
 .navbar-toggler{
     width: 20px;
@@ -160,7 +164,9 @@ body{
     transform: rotate(0deg);
 }
 
-/* Media Query  */
+/* Hamburger nav end */
+
+/* Media Query For Nav start  */
 
 @media(max-width:576px) {
     .navbar-toggler,.navbar-toggler.collapsed{
@@ -185,6 +191,7 @@ body{
         margin-top: 40px;
         background-color: #0E2C2B;
         border-radius: 10px;
+        z-index: 0;
     }
 
     ul li{
@@ -201,6 +208,7 @@ body{
         margin-top: 40px;
         background-color: #0E2C2B;
         border-radius: 10px;
+        z-index: 0;
     }
 
     ul li{
@@ -217,6 +225,7 @@ body{
         margin-top: 40px;
         /* background-color: #0E2C2B; */
         border-radius: 10px;
+        z-index: 0;
     }
 
     ul li{
@@ -228,51 +237,69 @@ body{
     }
 }
 
-/* Background Image  */
-.main_bg{
-    background-image: url(../images/bg3.jpg);
-    width: 100%;
-    height: 750px;
-    overflow: hidden;
+/* Media Query For Nav end  */
+
+/* main background sliders start  */
+
+.main-bg{
     position: relative;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgb(0, 0, 0, 0.5);
-    background-blend-mode: multiply;
-    animation: change 15s infinite ease-out;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
-@keyframes change{
-    0%
-    {
-        background-image: url(../images/bg1.jpg);
-    }
-    20%
-    {
-        background-image: url(../images/bg2.jpg);
-    }
-    40%
-    {
-        background-image: url(../images/bg3.jpg);
-    }
-    60%
-    {
-        background-image: url(../images/bg4.jpg);
-    }
-    80%
-    {
-        background-image: url(../images/bg5.jpg);
-    }
-    100%
-    {
-        background-image: url(../images/bg6.jpg);
-    }
+.bg-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  opacity: 0;
+  animation: zoomFade 24s infinite;
 }
 
+.image1 {
+  background-image: url(../images/bg1.jpg);
+  animation-delay: 0s;
+}
+.image2 {
+  background-image: url(../images/bg2.jpg);
+  animation-delay: 8s;
+}
+.image3 {
+  background-image: url(../images/bg3.jpg);
+  animation-delay: 16s;
+}
+
+@keyframes zoomFade {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+/* main background sliders end  */
+
+/* <!-- Welcome Section Start  --> */
 .welcome-container {
     text-align: center;
-    position: relative;
+    position: absolute;
     margin-top: 150px;
 }
 
@@ -312,13 +339,14 @@ body{
     font-family: "Roboto";
 }
 
+/* <!-- Welcome Section end  --> */
 
-/* main-media  */
+/* Welcome section media start */
 @media(max-width:576px){
     .welcome-container {
         text-align: center;
         position: relative;
-        margin-top: 40px;
+        z-index: 1;
     }
 }
    
@@ -326,8 +354,11 @@ body{
 @media(max-width:768px){
     .welcome-container {
         text-align: center;
-        position: relative;
-        margin-top: 40px;
+        /* position: relative; */
+        /* margin-top: 80px;
+        padding-top: 80px; */
+        z-index: 1;
+
     }
 }
 
@@ -335,14 +366,13 @@ body{
     .welcome-container {
         text-align: center;
         position: relative;
-        margin-top: 40px;
+        margin-top: 80px;
+        z-index: 1;
     }
-} 
+}
+/* Welcome section media end  */
 
-/* Slogan  */
-/* .slogan_container{
-    height: 300px;
-} */
+/* Slogan start  */
 .solgan_text{
     text-transform: uppercase;
     color: #ccc;
@@ -366,13 +396,9 @@ body{
     font-size: 45px;
     padding-bottom: 30px;
 }
+/* Slogan End  */
 
-/* slogan mediaquery  */
-@media(max-width:576px){
-    .slogan_img{
-        padding-top: 40px !important;
-    }
-}
+/* Our Story Start  */
 
 /* Our story  */
 .ourstory_p1{
@@ -419,9 +445,6 @@ body{
     margin-top: 20px;
 }
 
-/* .ourstory_btn:hover{
-   
-} */
 
 .ourstory_img1{
     border-radius: 20px;
@@ -432,65 +455,42 @@ body{
     height: 790px;
     border-radius: 20px;
 }
+/* Our Story End  */
 
-/* ourstory mediaquery  */
+/* Our Story Media Start  */
+
 @media (max-width:768px) {
     .ourstory_img2{
         padding-top: 10px;
         height: 820px;
-    }
-}
+    };
 
-hr{
-    color: #A87C4F;
-    width: 1300px;
-    margin-left: 110px;
-    margin-top: 50px;
-}
-@media(max-width:568px){
-    hr{
-        margin-left: 20px;
-        width: 450px;
-    }
-}
-/* About Details start */
+    .ourstory_img1{
+        height: 200px;
+    };
+};
 
-.abtdetail_h5{
-    font-family: "Roboto";
-    font-size: 25px;
-}
-
-.abtdetail_p{
-    font-family: "Roboto";
-    font-size: 18px;
-}
-.abtdetail_img{
-    width: 90px;
-    height: 90px;
-    padding: 10px;
-    border: 2px solid #A87C4F;
-    border-radius: 50%;
-}
-
-.abtdeatil_container{
-    margin-top: 30px;
-}
-
-@media(max-width:568px){
-    .abtdeatil_container{
-        margin-top: 0px;
-    }
-}
-/* About details end  */
+@media (max-width:992px) {
+    .ourstory_img1{
+        padding-top: 10px;
+        height: 322px;
+    };
+};
+/* Our Story Media end  */
 
 /* about start  */
 
-.arched-image {
+.arched-image{
+    overflow: hidden;
+    position: relative;
+} 
+
+.leftcol_img{
+    width: 300px;
+    height: 600px;
     border-radius: 800px;
     overflow: hidden;
     position: relative;
-    width: 400px;
-    height: 600px;
 }
 
 .experience-badge {
@@ -544,23 +544,51 @@ ul.custom-list {
     color: #ccc;
 }
 
-@media(max-width:568px){
-    .experience-badge{
-        width: 130px;
+/* About End  */
+
+/* About Media start  */
+@media(max-width:576px){
+    .leftcol_img{
+        width: 500px !important;
+        height: 700px;
     }
 }
 
+@media(max-width:768px){
+    .leftcol_img{
+        width: 500px !important;
+        height: 700px;
+        margin-left: 100px;
+    }
 
-/* View Menu Start  */
-.bgview_menu{
-    background-image: url(../images/chef1.jpg);
-    height: 700px;
-    overflow: hidden;
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgb(0, 0, 0, 0.3);
-    background-blend-mode: multiply;
+    .experience-badge{
+        top: 20%;
+        left: 500px;
+    }
 }
-/* View Menu End  */
+/* About media end  */
+
+/* About Details start */
+
+.abtdetail_h5{
+    font-family: "Roboto";
+    font-size: 25px;
+}
+
+.abtdetail_p{
+    font-family: "Roboto";
+    font-size: 18px;
+}
+.abtdetail_img{
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    border: 2px solid #A87C4F;
+    border-radius: 50%;
+}
+
+.abtdeatil_container{
+    margin-top: 30px;
+}
+
+/* About details end  */
