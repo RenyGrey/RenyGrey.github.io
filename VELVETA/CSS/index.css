@@ -936,19 +936,23 @@ textarea::placeholder {
     padding-left: 5px;
 }
 
-@media(max-width:576px){
+@media (max-width: 576px){
     .book_header{
     margin-top: 0;
     }
 
     .book_main{
         margin-top: 50px;
-        margin-left: 40px;
+        padding-left: 40px;
     }
 
     .reserve_img{
-        width: 420px;
+        width: 400px !important;
         height: 500px;
+    }
+
+    .text_area{
+        width: 340px !important;
     }
 }
 
@@ -1024,7 +1028,110 @@ textarea::placeholder {
     font-size: 18px;
     margin-bottom: 5px;
 }
+
+@media(max-width:576px){
+
+    .eventimg_1{
+        width: 400px;
+        height: 500px;
+        border-radius: 200px 200px 0px 0px;
+        margin-left: 55px;
+        margin-top: 20px;
+    }
+}
 /* Events end  */
+
+
+/* Reviews start  */
+.card {
+  border-radius: 15px;
+}
+.card-title {
+  font-weight: 600;
+}
+
+.reviews_main{
+    background-color: #0E2C2B;
+}
+
+.reviews_main p{
+    font-family: "Roboto";
+    font-size: 16px;
+}
+.reviews_h2{
+    color: #A87C4F;
+    font-size: 30px;
+    font-family: "Dancing Script";
+}
+/* reviews end  */
+
+/* blog start  */
+.blogh1{
+    font-size: 30px;
+    color: #ffffff;
+    font-family: "Lora";
+    letter-spacing: 1px;
+}
+
+.blogs_h1{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.blog_img{
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+@media(max-width:768px){
+    .blog_img{
+        height:400px ;
+    }
+}
+/* blog end */
+
+/* Visit us start  */
+
+.visit_us{
+    margin-top: 80px;
+}
+
+.visitus_p{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Roboto";
+    margin-bottom: 40px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+.visitus_h2{
+    font-size: 40px;
+    font-family: "Lora";
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.visit_img{
+    width: 250px;
+    height: 150px;
+    margin-left: 630px;
+    margin-bottom: 80px;
+}
+
+@media(max-width:576px){
+    .visit_img{
+        margin-left: 160px !important;
+    }
+}
+
+@media(max-width:768px){
+    .visit_img{
+        margin-left: 260px;
+    }
+}
+/* visit us end  */
 /* footer start  */
 footer a:hover {
   color: #A87C4F !important;
